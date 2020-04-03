@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ProductApp.Product.DomainModel
 {
@@ -10,5 +8,10 @@ namespace ProductApp.Product.DomainModel
 		public string Name { get; set; }
 		public string UpdateBy { get; internal set; }
 		public DateTime UpdateDate { get; internal set; }
+
+		public override string ToString()
+		{
+			return Name;
+		}
 	}
 }
