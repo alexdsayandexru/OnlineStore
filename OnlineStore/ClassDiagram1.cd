@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="OnlineStore.Microservices.Gateway">
-    <Position X="0.5" Y="0.75" Width="1.75" />
+    <Position X="0.5" Y="0.5" Width="1.75" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
@@ -10,13 +10,11 @@
       <FileName>Microservices\Gateway.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Product" />
-      <Property Name="Payment" />
-      <Property Name="Order" />
+      <Field Name="_productGateway" />
     </ShowAsAssociation>
   </Class>
   <Class Name="OnlineStore.Microservices.Product.DomainModel.Repository">
-    <Position X="5.25" Y="1.75" Width="1.5" />
+    <Position X="6" Y="1.75" Width="1.5" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
@@ -24,28 +22,39 @@
       <HashCode>AAACAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAEAQCAA=</HashCode>
       <FileName>Microservices\Product\DomainModel\Repository.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Category" />
+      <Property Name="Product" />
+      <Property Name="ProductPrice" />
+      <Property Name="ProductQuantity" />
+    </ShowAsAssociation>
   </Class>
-  <Interface Name="OnlineStore.Microservices.Product.IProductGateway">
-    <Position X="3.25" Y="0.75" Width="1.5" />
+  <Class Name="OnlineStore.Microservices.Product.ProductGateway">
+    <Position X="2.75" Y="1.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
-      <FileName>Microservices\Product\IProductGateway.cs</FileName>
+      <HashCode>AAAAAAAQAAAAAAAAAgAAAAAAAAAAAAAAQBAAAAAAAAA=</HashCode>
+      <FileName>Microservices\Product\ProductGateway.cs</FileName>
     </TypeIdentifier>
-  </Interface>
-  <Interface Name="OnlineStore.Microservices.Payment.IPaymentGateway" Collapsed="true">
-    <Position X="3.25" Y="2.75" Width="1.5" />
+    <ShowAsAssociation>
+      <Field Name="_bus" />
+      <Field Name="_model" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OnlineStore.Pages.ProductPage">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Microservices\Payment\IPaymentGateway.cs</FileName>
+      <HashCode>AAAACAAJAGAAAAAQAAKIIAECAEAAAAAAAAACAAAwBAA=</HashCode>
+      <FileName>Pages\ProductPage.cs</FileName>
     </TypeIdentifier>
-  </Interface>
-  <Interface Name="OnlineStore.Microservices.Order.IOrderGateway" Collapsed="true">
-    <Position X="3.25" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Microservices\Order\IOrderGateway.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
+    <ShowAsAssociation>
+      <Field Name="_gateway" />
+    </ShowAsAssociation>
+  </Class>
   <Interface Name="OnlineStore.Infrastructure.EventBus.IEventBus" Collapsed="true">
     <Position X="5.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
@@ -53,39 +62,39 @@
       <FileName>Infrastructure\EventBus\IEventBus.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="OnlineStore.Infrastructure.EventBus.IIntegrationEventHandler&lt;T&gt;" Collapsed="true">
-    <Position X="7.25" Y="0.75" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
-      <FileName>Infrastructure\EventBus\IEventBus.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Interface Name="OnlineStore.Microservices.Product.DomainModel.Services.ICategoryService" Collapsed="true">
-    <Position X="7.25" Y="1.75" Width="1.5" />
+    <Position X="8.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Microservices\Product\DomainModel\Services\ICategoryService.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="OnlineStore.Microservices.Product.DomainModel.Services.IProductService" Collapsed="true">
-    <Position X="7.25" Y="2.5" Width="1.5" />
+    <Position X="8.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
       <FileName>Microservices\Product\DomainModel\Services\IProductService.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="OnlineStore.Microservices.Product.DomainModel.Services.IProductPriceService" Collapsed="true">
-    <Position X="7.25" Y="3.25" Width="1.5" />
+    <Position X="8.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Microservices\Product\DomainModel\Services\IProductPriceService.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="OnlineStore.Microservices.Product.DomainModel.Services.IProductQuantityService" Collapsed="true">
-    <Position X="7.25" Y="4" Width="1.5" />
+    <Position X="8.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Microservices\Product\DomainModel\Services\IProductQuantityService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OnlineStore.Microservices.Product.IProductGateway" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Microservices\Product\IProductGateway.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

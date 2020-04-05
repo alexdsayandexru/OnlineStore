@@ -137,5 +137,8 @@
     <Folder Include="Microservices\Payment\DomainModel\Services\" />
     <Folder Include="Microservices\Payment\Entities\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="TextFile1.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
