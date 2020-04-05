@@ -1,1 +1,2 @@
-﻿
+﻿$ git remote add origin https://github.com/alexdsayandexru/OnlineStore.git
+$ git push -u origin master
