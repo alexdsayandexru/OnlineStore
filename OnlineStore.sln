@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApp", "ProductApp\ProductApp.csproj", "{3272826E-178A-4590-9BE4-1E33F607B153}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{5B2EE022-E08A-4E8D-BD9A-51CD09011FAC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStore", "OnlineStore\OnlineStore.csproj", "{70946075-10E9-4378-A02F-BE1316314EC4}"
 EndProject
 Global
@@ -15,14 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3272826E-178A-4590-9BE4-1E33F607B153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3272826E-178A-4590-9BE4-1E33F607B153}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3272826E-178A-4590-9BE4-1E33F607B153}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3272826E-178A-4590-9BE4-1E33F607B153}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5B2EE022-E08A-4E8D-BD9A-51CD09011FAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B2EE022-E08A-4E8D-BD9A-51CD09011FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B2EE022-E08A-4E8D-BD9A-51CD09011FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5B2EE022-E08A-4E8D-BD9A-51CD09011FAC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{70946075-10E9-4378-A02F-BE1316314EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{70946075-10E9-4378-A02F-BE1316314EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70946075-10E9-4378-A02F-BE1316314EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU

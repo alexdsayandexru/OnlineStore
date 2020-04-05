@@ -59,6 +59,8 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Microservices\Gateway.cs" />
+    <Compile Include="Microservices\Payment\IPaymentGateway.cs" />
+    <Compile Include="Microservices\Payment\PaymentGateway.cs" />
     <Compile Include="Microservices\Order\IOrderGateway.cs" />
     <Compile Include="Microservices\Order\OrderGateway.cs" />
     <Compile Include="Microservices\Product\DomainModel\Entities\Measure.cs" />
@@ -112,6 +114,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -130,6 +133,9 @@
     <Folder Include="Microservices\Order\DomainModel\Entities\" />
     <Folder Include="Microservices\Order\DomainModel\Services\" />
     <Folder Include="Microservices\Order\Entities\" />
+    <Folder Include="Microservices\Payment\DomainModel\Entities\" />
+    <Folder Include="Microservices\Payment\DomainModel\Services\" />
+    <Folder Include="Microservices\Payment\Entities\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

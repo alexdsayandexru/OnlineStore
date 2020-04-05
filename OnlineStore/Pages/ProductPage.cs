@@ -4,6 +4,7 @@ using Ninject;
 using Ninject.Modules;
 using OnlineStore.Microservices;
 using OnlineStore.Microservices.Order;
+using OnlineStore.Microservices.Payment;
 using OnlineStore.Microservices.Product;
 using OnlineStore.Microservices.Product.Entities;
 
@@ -45,6 +46,7 @@ namespace OnlineStore.Pages
         {
             Bind<IProductGateway>().To<ProductGateway>();
             Bind<IOrderGateway>().To<OrderGateway>();
+            Bind<IPaymentGateway>().To<PaymentGateway>();
             Bind<Gateway>().ToSelf();
         }
     }

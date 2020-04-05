@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OnlineStore.Microservices.Gateway">
+    <Position X="0.5" Y="0.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAAEAAAAAIAAAAAAAQAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Microservices\Gateway.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Product" />
+      <Property Name="Payment" />
+      <Property Name="Order" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OnlineStore.Microservices.Product.DomainModel.Repository">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAEAQCAA=</HashCode>
+      <FileName>Microservices\Product\DomainModel\Repository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="OnlineStore.Microservices.Product.IProductGateway">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Microservices\Product\IProductGateway.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OnlineStore.Microservices.Payment.IPaymentGateway" Collapsed="true">
+    <Position X="3.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microservices\Payment\IPaymentGateway.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OnlineStore.Microservices.Order.IOrderGateway" Collapsed="true">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microservices\Order\IOrderGateway.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OnlineStore.Infrastructure.EventBus.IEventBus" Collapsed="true">
+    <Position X="5.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAACAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\EventBus\IEventBus.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OnlineStore.Infrastructure.EventBus.IIntegrationEventHandler&lt;T&gt;" Collapsed="true">
+    <Position X="7.25" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\EventBus\IEventBus.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OnlineStore.Microservices.Product.DomainModel.Services.ICategoryService" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microservices\Product\DomainModel\Services\ICategoryService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OnlineStore.Microservices.Product.DomainModel.Services.IProductService" Collapsed="true">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Microservices\Product\DomainModel\Services\IProductService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OnlineStore.Microservices.Product.DomainModel.Services.IProductPriceService" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microservices\Product\DomainModel\Services\IProductPriceService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OnlineStore.Microservices.Product.DomainModel.Services.IProductQuantityService" Collapsed="true">
+    <Position X="7.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microservices\Product\DomainModel\Services\IProductQuantityService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
