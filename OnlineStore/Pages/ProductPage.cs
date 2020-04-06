@@ -12,7 +12,7 @@ namespace OnlineStore.Pages
 {
     public partial class ProductPage : UserControl
     {
-        private Gateway _gateway;        
+        private Gateway _gateway;
 
         public ProductPage()
         {
@@ -23,7 +23,7 @@ namespace OnlineStore.Pages
         private void Init()
         {
             IKernel ninjectKernel = new StandardKernel(new GatewayConfigModule());
-            _gateway = ninjectKernel.Get<Gateway>();            
+            _gateway = ninjectKernel.Get<Gateway>();
         }
 
         private void acceptButton_Click(object sender, EventArgs e)

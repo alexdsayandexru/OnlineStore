@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OnlineStore.Microservices.Order
+﻿namespace OnlineStore.Microservices.Order
 {
     public class OrderGateway : IOrderGateway
     {
